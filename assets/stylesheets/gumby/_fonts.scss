@@ -1,0 +1,30 @@
+/* Fonts */
+
+// Import Google Web Fonts
+// @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(//fonts.googleapis.com/css?family=Merriweather:700,400,300);
+@import url(//fonts.googleapis.com/css?family=Arvo:700);
+
+
+// Set local icon font
+@font-face {
+	font-family: '#{$icons}';
+	font-style: normal;
+  font-weight: 400;
+  src: url(/assets/icons/#{$icons}.eot);
+	src: url('/assets/icons/#{$icons}.eot?#iefix') format('ie9-skip-eot'),
+			 url('/assets/icons/#{$icons}.woff') format('woff'),
+			 url('/assets/icons/#{$icons}.ttf')  format('truetype');
+}
+
+// To include your own, local copies of fonts, use the following template
+//
+//@font-face {
+//	font-family: '#{$some-font-variable}';
+//	font-style: normal;
+//  font-weight: 400;
+//  src: url(/assets/icons/#{$some-font-variable}.eot);
+//	src: url('/assets/icons/#{$some-font-variable}.eot?#iefix') format('ie9-skip-eot'),
+//			 url('/assets/icons/#{$some-font-variable}.woff') format('woff'),
+//			 url('/assets/icons/#{$some-font-variable}.ttf')  format('truetype');
+//}

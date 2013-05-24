@@ -1,0 +1,32 @@
+!!! 5
+%html
+%head
+  %title Armchair Indy
+  %link(rel="stylesheet" href="/assets/main.css")
+  / %script(src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+  %script(src="/assets/application.js")
+%body
+  .row
+    .eight.columns.centered
+      %header.main(gumby-fixed="top" gumby-holder="#parent")
+        %hgroup
+          %h1 Armchair Indy
+          %h2 Exploration for the itinerant idler
+        %form#search
+          .field
+            %input.search.input#search-query(placeholder="Search…" autofocus="true" autocomplete="off")
+  .row
+    .sixteen.columns
+      %ul#collection-items
+  .row#loader
+    .one.column.centered
+      
+
+  %script#collection-item(type="text/x-handlebars-template")
+    %li.collection-item
+      %figure
+        %img.image.photo(src="http://www.manchestergalleries.org/the-collections/search-the-collection/mcgweb/objects/common/webmedia.php?irn={{collection_item.media_irn}}")
+
+        %figcaption
+          %h4 {{collection_item.title}}
+          %h5 {{collection_item.creator}}

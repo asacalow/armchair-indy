@@ -1,0 +1,55 @@
+@import "gumby/gumby";
+
+header.main {
+  margin: ms(2) 0;
+
+  hgroup {
+    margin: 0 ms(-1) ms(-1) ms(-1);
+
+    h1 {
+      font-family: "Arvo";
+      font-weight: 700;
+      font-size: ms(4);
+      padding-bottom: 0;
+    }
+    h2 {
+      font-size: ms(1);
+    }
+  }
+}
+
+ul#collection-items {
+  position: relative;
+
+  li.collection-item {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width: 240px;
+    height: auto;
+
+    figure {
+      padding: 10px;
+
+      img {
+        margin-bottom: 0;
+      }
+
+      figcaption {
+        h4, h5 {
+          font-size: ms(-1);
+          font-weight: $norm;
+        }
+        h5 {
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
+div#loader {
+  text-align: center;
+  position: relative;
+  background: rgba (255, 255, 255, 0.5);
+}

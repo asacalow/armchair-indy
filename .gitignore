@@ -16,3 +16,7 @@ tmp
 .yardoc
 _yardoc
 doc/
+.DS_Store
+.sass-cache
+log/*.log
+worksonpaper*
