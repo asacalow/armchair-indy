@@ -1,4 +1,8 @@
+require 'rubygems'
+require 'bundler'
+Bundler.require(:default)
 require './elasticsearch'
+require 'sinatra/asset_pipeline'
 
 class SearchMethod < Poncho::JSONMethod
   param :q, :required => true
@@ -14,6 +18,10 @@ class QuickSearch < Sinatra::Base
   configure :production, :development do
     enable :logging
   end
+
+  set :assets_css_compressor, Sprockets::Sass::Compressor.new
+  set :assets_js_compressor, Uglifier.new
+  register Sinatra::AssetPipeline
 
   get '/' do
   	haml :index

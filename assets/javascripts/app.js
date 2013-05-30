@@ -1,4 +1,5 @@
-//= require handlebars
+//= require ./libs/handlebars.runtime.js
+//= require ./libs/handlebars.js
 //= require ./libs/modernizr.min.js
 //= require ./libs/jquery-1.9.1.min.js
 //= require ./libs/jquery.imagesloaded.js
