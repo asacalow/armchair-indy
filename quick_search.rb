@@ -23,6 +23,10 @@ class QuickSearch < Sinatra::Base
   set :assets_js_compressor, Uglifier.new
   register Sinatra::AssetPipeline
 
+  helpers do
+    include Sprockets::Helpers
+  end
+
   get '/' do
   	haml :index
   end
