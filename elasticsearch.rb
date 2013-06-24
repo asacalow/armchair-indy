@@ -1,3 +1,3 @@
 require './elasticsearch/collection_item'
 
-Tire.configure { url "http://USERNAME:PASSWORD@elasticsearch.asacalow.me:8080/" }
+Tire.configure { url "http://indy:hogwartbluechercovenantshirt@54.229.70.70:8080/" }
